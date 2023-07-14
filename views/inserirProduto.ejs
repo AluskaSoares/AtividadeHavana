@@ -1,0 +1,33 @@
+<!-- inserirProduto.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Inserir Produto</title>
+  <style>
+    body{
+    background-color: rgb(185, 207, 251);
+    font-size: 30px;
+    }
+    div{
+      text-align: center;
+    }
+      h1{
+        text-align: center;
+      }
+
+    </style>
+</head>
+<body>
+  <h1>Inserir Produto</h1>
+  <form action="/produto/inserir" method="POST">
+    <div><label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br>
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" name="preco" step="0.01" required>
+    <br>
+    <button type="submit">Adicionar Produto</button></div>
+  </form>
+</body>
+</html>

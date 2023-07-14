@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resultado da Consulta</title>
+  <style>
+    body{
+    background-color: rgb(185, 207, 251);
+    font-size: 30px;
+    }
+    h1{
+      text-align: center;
+    }
+    li{
+      font-size: 25px;
+    }
+    
+
+    </style>
+
+</head>
+<body>
+  <h1>Resultado da Consulta</h1>
+  <ul>
+    <% resultados.forEach((resultado) => { %>
+      <li>Nome: <%= resultado.nome %></li>
+      <li>Preço: <%= resultado.preco %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
